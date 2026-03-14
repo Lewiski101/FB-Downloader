@@ -1,11 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const [url, setUrl] = useState("");
   const [loading, setLoading] = useState(false);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleDownload = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -14,6 +20,8 @@ export default function Home() {
     // Logic will go here
     setTimeout(() => setLoading(false), 2000);
   };
+
+  if (!mounted) return null;
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -137,8 +145,8 @@ export default function Home() {
           </div>
           <p className="text-gray-500 mb-8">© 2026 FBDownloader. All rights reserved.</p>
           <div className="flex justify-center gap-8 text-sm font-medium text-gray-400">
-            <a href="#" className="hover:text-[#1877f2]">Privacy Policy</a>
-            <a href="#" className="hover:text-[#1877f2]">Terms of Service</a>
+            <Link href="/privacy" className="hover:text-[#1877f2]">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-[#1877f2]">Terms of Service</Link>
             <a href="#" className="hover:text-[#1877f2]">Contact</a>
           </div>
         </div>

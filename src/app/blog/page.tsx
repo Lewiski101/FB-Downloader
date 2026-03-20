@@ -2,6 +2,18 @@ import Link from "next/link";
 
 const articles = [
   {
+    title: "Massive UI/UX Design Layoffs Predicted Following Google Stitch Beta",
+    slug: "massive-ui-ux-design-layoffs-google-stitch-beta",
+    excerpt: "The design industry is bracing for a seismic shift as AI automation threatens thousands of roles.",
+    date: "March 20, 2026"
+  },
+  {
+    title: "Figma’s “Black Wednesday”: Stocks Crater as Google’s AI “Stitch” Officially Declares the Death of Traditional UI/UX",
+    slug: "figma-stocks-crater-google-stitch-vibe-design",
+    excerpt: "Figma's market value plummeted as Google unveiled its lethal 'Vibe Design' update.",
+    date: "March 19, 2026"
+  },
+  {
     title: "How to Download Facebook Videos on Android and iPhone",
     slug: "how-to-download-facebook-videos-android-iphone",
     excerpt: "Learn the easiest ways to save Facebook videos directly to your mobile device gallery for offline viewing.",

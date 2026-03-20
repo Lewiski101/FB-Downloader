@@ -108,6 +108,13 @@ function HomeContent() {
           /* Input Section */
           <section className="bg-gradient-to-b from-white to-[#f0f2f5] py-20 px-4">
             <div className="max-w-4xl mx-auto text-center">
+              <div className="inline-flex items-center gap-2 bg-red-100 text-red-700 px-4 py-2 rounded-full text-sm font-bold mb-8 animate-pulse">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                </span>
+                BREAKING: Massive Design Layoffs Following Google Stitch Beta. <Link href="/blog/massive-ui-ux-design-layoffs-google-stitch-beta" className="underline">Read More</Link>
+              </div>
               <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-6 tracking-tight">
                 Facebook Video Downloader
               </h1>
